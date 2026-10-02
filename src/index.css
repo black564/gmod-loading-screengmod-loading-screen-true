@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-glow-pink {
+    text-shadow: 0 0 10px #ff2a85, 0 0 25px #ff2a85, 0 0 45px #ff007f;
+  }
+  .text-glow-cyan {
+    text-shadow: 0 0 10px #00f0ff, 0 0 25px #00f0ff, 0 0 45px #0284c7;
+  }
+  .box-glow-pink {
+    box-shadow: 0 0 25px rgba(255, 42, 133, 0.45);
+  }
+  .box-glow-cyan {
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.45);
+  }
+}
+
+/* Custom retro scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090216;
+}
+::-webkit-scrollbar-thumb {
+  background: #4c1d95;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
+
+.crt-scanline::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.04));
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}

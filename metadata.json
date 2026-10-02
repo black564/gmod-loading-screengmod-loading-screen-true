@@ -1,0 +1,6 @@
+{
+  "name": "MoonRP Vaporwave Logo Studio",
+  "description": "Static and animated Vaporwave logo design studio and previewer for the Garry's Mod MoonRP server.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

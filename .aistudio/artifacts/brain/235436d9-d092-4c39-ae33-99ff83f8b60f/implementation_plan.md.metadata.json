@@ -1,0 +1,6 @@
+{
+  "summary":  "План интеграции статичного и анимированного логотипов MoonRP в Garry's Mod (DarkRP): экран загрузки (sv_loadingurl) и игровой HUD (Lua / VTF / DHTML).",
+  "updatedAt":  "2026-10-02T15:38:38.973384694Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}
